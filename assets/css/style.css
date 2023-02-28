@@ -985,7 +985,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 .product-minimal .price {
   font-size: var(--fs-7);
   font-weight: var(--weight-700);
-  color: var(--salmon-pink);
+  color: var(--bittersweet);
 }
 
 .product-minimal .price-box del {
@@ -1061,7 +1061,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 
 .product-featured .price {
-  color: var(--salmon-pink);
+  color: var(--bittersweet);
   font-weight: var(--weight-700);
 }
 
@@ -1071,7 +1071,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 
 .product-featured .add-cart-btn {
-  background: var(--salmon-pink);
+  background: var(--bittersweet);
   padding: 8px 15px;
   color: var(--white);
   font-weight: var(--fs-9);
@@ -1101,7 +1101,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 
 .product-featured .showcase-status-bar {
-  background: var(--cultured);
+  background: var(--bittersweet);
   position: relative;
   height: 10px;
   border-radius: 5px;
