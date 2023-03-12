@@ -1540,7 +1540,7 @@ footer {
 }
 
 .footer-category-title {
-  color: var(--salmon-pink);
+  color: var(--bittersweet);
   font-size: var(--fs-6);
   font-weight: var(--weight-600);
   text-transform: uppercase;
@@ -1611,7 +1611,7 @@ footer {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: var(--salmon-pink);
+  background: var(--bittersweet);
   width: 60px;
   height: 1px;
 }
@@ -1627,7 +1627,7 @@ footer {
   transition: var(--transition-timing);
 }
 
-.footer-nav-link:hover { color: var(--salmon-pink); }
+.footer-nav-link:hover { color: var(--bittersweet); }
 
 .footer-nav-item.flex {
   display: flex;
