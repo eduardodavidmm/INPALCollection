@@ -1207,7 +1207,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   position: absolute;
   top: 15px;
   left: 15px;
-  background: var(--ocean-green);
+  background: var(--bittersweet);
   font-size: var(--fs-8);
   font-weight: var(--weight-500);
   color: var(--white);
