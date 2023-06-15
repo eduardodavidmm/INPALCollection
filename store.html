@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>INPAL - Add to cart javascript</title>
+  <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="theme-color" content="linear-gradient(to bottom, #61daff, #656bff)">
+   <meta name="description" content="We will simple add to cart using javascript localstorage">
+   <meta name="keywords" content="add to cart, add to cart javascript, localstorage add to cart, ecommerce shopping javascript, shooping cart demo">
+   <meta name="author" content="David Maldonado"><link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css'>
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css'><link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+         <a class="navbar-brand" href="#"><strong>Tienda vía WhatsApp INPAL</strong></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+               <input class="form-control mr-sm-2" type="search" id="search_field"  placeholder="Search" aria-label="Search">
+            </form>
+            <button type="button" class="btn btn-success my-2 my-sm-0" data-toggle="modal"
+               data-target="#staticBackdrop">
+                <i class="fas fa-shopping-cart total-count"></i>
+            </button>
+         </div>
+      </nav>
+      <section>
+         <div class="featured-area pt-100 pb-70">
+            <div class="container">
+               <div class="tab featured-tab-area">
+                  <div class="row justify-content-center">
+                  </div>
+                  <div class="tab_content current active pt-45">
+                     
+                     <div class="tabs_item current">
+                        <div class="row justify-content-center">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="./assets/images/products/fraganceswha.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Esencias y Fragancias</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>Lps. 320.00 </h4>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Oxford" data-price="1200" class="default-btn border-radius-5">Añadir a Carrito</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="./assets/images/products/showerwha.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Gel de Baño Variedad</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>Lps. 350.00</h4>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Tunic" data-price="459" class="default-btn border-radius-5">Añadir a Carrito</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="./assets/images/products/lotionwha.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Cremas y Lociones</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>Lps. 380.00 </h4>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Huawei" data-price="4059" class="default-btn border-radius-5">Añadir a Carrito</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="./assets/images/products/cosmeticswha.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Accesorios y Cosmeticos</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>Lps. 500.00 </h4>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Short-Sleeve" data-price="800" class="default-btn border-radius-5">Añadir a Carrito</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           
+                        </div>
+                     </div>
+                     <div class="tabs_item">
+                        <div class="row justify-content-center">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="https://add-to-cart-javascript.vercel.app/img/men-1.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Oxford Shirts</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 1200 </h4>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Oxford" data-price="1200" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="https://add-to-cart-javascript.vercel.app/img/men-2.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Short-Sleeve Shirt</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 800 </h4>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Short-Sleeve" data-price="800" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="https://add-to-cart-javascript.vercel.app/img/men-3.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Cuban Collar Shirt</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 499 </h4>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Cuban" data-price="499" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                 <div class="featured-item-img">
+                                    <a href="#">
+                                       <img src="https://add-to-cart-javascript.vercel.app/img/men-4.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">T-shirt</a></h3>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>₹ 700 </h4>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="T-shirt" data-price="700" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <p id="not_found"></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+         aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Resumen del pedido</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <table class="show-cart table">
+        
+                  </table>
+                  <div class="grand-total">Subtotal o Precio Estimado: L.<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                  <input type="button" name="submit" class="btnSubmit btn-block" onclick="gotowhatsapp()" value="Enviar" />
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  <!-- <button type="button" class="btn btn-danger clear-all">Clear All</button> -->
+                </div>
+            </div>
+         </div>
+      </div>
+   </main>
+   <footer>
+    <div class="footer-category">
+      <div class="container">
+
+      </div>
+    </div>
+
+    <div class="footer-nav">
+      <div class="container">
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+        <p class="copyright">
+          Copyright &copy; <a href="#">INPAL Collection</a> by Futura derechos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-3.6.3.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
