@@ -161,7 +161,7 @@ var shoppingCart = (function () {
     //var service = document.getElementById("service").value;
     //var services_multiple = document.getElementById("services_multiple").value;
     
-    var url = "https://api.whatsapp.com/send/?phone=50497620339&text="
+    var url = "https://api.whatsapp.com/send/?phone=50495906105&text="
         + "Nombre: Prueba" + "%0a"
         //+ "Teléfono: " + phone + "%0a"
         //+ "Correo: " + email + "%0a"
